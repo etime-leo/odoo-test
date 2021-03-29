@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data noupdate="1">
-        <record model="test.course" id="IRP 101">
+        <record model="test.course" id="IRP_101">
             <field name="name">IRP 101</field>
             <field name="description">description 101</field>
             <field name="level">beginner</field>
