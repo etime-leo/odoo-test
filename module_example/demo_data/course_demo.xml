@@ -6,7 +6,7 @@
             <field name="description">description 101</field>
             <field name="level">beginner</field>
         </record>
-        <record model="test.course" id="IRP 101">
+        <record model="test.course" id="inter">
             <field name="name">IRP 101</field>
             <field name="description">lorem ipsum:
             asdasdasd
@@ -15,7 +15,7 @@
             </field>
             <field name="level">intermediate</field>
         </record>
-        <record model="test.course" id="IRP 101">
+        <record model="test.course" id="aaa">
             <field name="name">IRP 101</field>
             <field name="description">description 101</field>
             <field name="level">beginner</field>
