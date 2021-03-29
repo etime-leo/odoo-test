@@ -33,7 +33,7 @@
             <field name="description">description 101</field>
             <field name="dimension">500.0</field>
             <field name="fuel">2000.000</field>
-            <field name="n_passenger">spaceship50</field>
+            <field name="n_passenger">50</field>
             <field name="ship_type">large</field>
             <field name="active">False</field>
         </record>
