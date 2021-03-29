@@ -9,7 +9,7 @@ class Spaceship(models.Model):
 
     name = fields.Char(string='name', required=True)
     description = fields.Text(string='this is a very long title')
-    dimension = fields.Float('feet', digits=(12,1))
+    dimension = fields.Float('feet', digits=(12,2))
     fuel = fields.Float('gallons', digits=(12,1))
     n_passenger = fields.Integer()
     active = fields.Boolean()
