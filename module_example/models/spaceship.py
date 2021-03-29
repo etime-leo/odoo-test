@@ -15,7 +15,7 @@ class Spaceship(models.Model):
     ship_type = fields.Selection(string='type',
                                  selection=[('small', 'Sidewinder'),
                                             ('medium', 'Cobra MK IV'),
-                                            ('big', 'Python')
+                                            ('large', 'Python')
                                             ],
                                  copy=False)
     active = fields.Boolean(string='Active', default=True)
