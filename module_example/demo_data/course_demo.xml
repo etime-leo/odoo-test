@@ -18,7 +18,7 @@
         <record model="test.course" id="aaa">
             <field name="name">IRP 101</field>
             <field name="description">description 101</field>
-            <field name="level">beginner</field>
+            <field name="level">advance</field>
         </record>
     </data>
 </odoo>

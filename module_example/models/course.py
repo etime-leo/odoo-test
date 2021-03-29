@@ -11,8 +11,8 @@ class Course(models.Model):
     description = fields.Text(string='this is a very long title')
     level = fields.Selection(string='level',
                              selection=[('beginner', 'Beginner'),
-                                        ('intermidiet', 'Intermidiet'),
-                                        ('advanced', 'Advanced')
+                                        ('intermediate', 'Intermediate'),
+                                        ('advance', 'Advance')
                                         ],
                              copy=False)
 
