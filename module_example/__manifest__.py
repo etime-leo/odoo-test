@@ -11,7 +11,7 @@
 
     ],
     'demo': [
-
+        'demo_data/course_demo.xml'
     ],
 
 }
