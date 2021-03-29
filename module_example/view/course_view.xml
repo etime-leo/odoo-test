@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="course_view_form">
+            <field name="name">view.course.form</field>
+            <field name="model">test.course</field>
+            <field name="arch" type="xml">
+                <form sreing="Course form">
+                    <sheet>
+                        <h1>
+                            <field name="name"></field>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="active"></field>
+                            </group>
+                            <group>
+                                <field name="level"></field>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"></field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="course view list">
+            <field name="name">view.course.list</field>
+            <field name="model">test.course</field>
+            <field name="xml">
+                <tree string="Course List">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="level"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ui.ir,view" id="course view search">
+            <field name="name">view.course.search</field>
+            <field name="model">test.course</field>
+            <field name="aech" type="xml">
+                <search>
+                    <field name="name"></field>
+                    <field name="description"></field>
+                    <field name="level"></field>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
