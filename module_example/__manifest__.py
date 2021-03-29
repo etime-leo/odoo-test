@@ -11,8 +11,7 @@
 
     ],
     'demo': [
-        'demo_data/course_demo.xml',
-        'demo_data/spaceship_demo.xml',
+        'demo_data/course_demo.xml'
     ],
 
 }
