@@ -5,4 +5,4 @@ from odoo import models, fields, api
 class Course(models.Model):
 
     _name = 'test.course'
-    _description = 'course info'
+    _description = 'course info modify'
