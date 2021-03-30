@@ -31,7 +31,7 @@ class Course(models.Model):
             raise UserError('Base price sux')
         self.total_price = self.base_price + self.additional_fee
 
-    @api.constraint('addition_fee')
+    @api.constrains('addition_fee')
     def _check_addition_fee(self):
         for record in self:
             if record.addition_fee < 10.00:
