@@ -8,7 +8,8 @@
     'version': '0.1',
     'depends': ['base'],
     'date': [
-        'view/course_view.xml',
+        'views/course_view.xml',
+        'views/test_menuitems.xml',
     ],
     'demo': [
         'demo_data/course_demo.xml',
