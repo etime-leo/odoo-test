@@ -1,3 +1,4 @@
+# noinspection PyStatementEffect
 {
     'name': 'Module Example',
     'summary': 'Example of the module',
@@ -8,6 +9,8 @@
     'version': '0.1',
     'depends': ['base'],
     'date': [
+        'security/test_security.xml',
+        'security/ir.model.access.csv',
         'views/course_view.xml',
         'views/test_menuitems.xml',
     ],
