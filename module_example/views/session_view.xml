@@ -13,9 +13,12 @@
                         <group>
                             <group>
                                 <field name="course_id"/>
+                                <field name="Instructor_id"/>
                             </group>
                             <group>
-                                <field name="Instructor_id"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                                <field name="duration"/>
                             </group>
                         </group>
                         <notebook>
@@ -37,16 +40,30 @@
                 </tree>
             </field>
         </record>
-<!--        <record model="ui.ir,view" id="session view search">-->
-<!--            <field name="name">view.session.search</field>-->
-<!--            <field name="model">test.session</field>-->
-<!--            <field name="aech" type="xml">-->
-<!--                <search>-->
-<!--                    <field name="name"/>-->
-<!--                    <field name="description"/>-->
-<!--                    <field name="level"/>-->
-<!--                </search>-->
-<!--            </field>-->
-<!--        </record>-->
+        <record model="ir.ui.view" id="session view calendar">
+            <field name="name">test.session.calendar</field>
+            <field name="model">test.session</field>
+            <field name="arch" type="xml">
+                <caledar string="Session caledar"
+                date_start="start_date"
+                date_end="end_date"
+                color="instructor_id"
+                mode="month">
+                    <field name="name"/>
+                    <field name="instructor_id"/>
+                </caledar>
+            </field>
+        </record>
+        <!--        <record model="ui.ir,view" id="session view search">-->
+        <!--            <field name="name">view.session.search</field>-->
+        <!--            <field name="model">test.session</field>-->
+        <!--            <field name="aech" type="xml">-->
+        <!--                <search>-->
+        <!--                    <field name="name"/>-->
+        <!--                    <field name="description"/>-->
+        <!--                    <field name="level"/>-->
+        <!--                </search>-->
+        <!--            </field>-->
+        <!--        </record>-->
     </data>
 </odoo>

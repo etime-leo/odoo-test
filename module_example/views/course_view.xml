@@ -33,7 +33,7 @@
                 </form>
             </field>
         </record>
-        <record model="ir.ui.view" id="course view list">
+        <record model="ir.ui.view" id="course_view_list">
             <field name="name">view.course.list</field>
             <field name="model">test.course</field>
             <field name="arch" type="xml">
@@ -44,7 +44,7 @@
                 </tree>
             </field>
         </record>
-        <record model="ui.ir,view" id="course view search">
+        <record model="ui.ir,view" id="course_view_search">
             <field name="name">view.course.search</field>
             <field name="model">test.course</field>
             <field name="arch" type="xml">
@@ -53,6 +53,18 @@
                     <field name="description"/>
                     <field name="level"/>
                 </search>
+            </field>
+        </record>
+         <record model="ui.ir,view" id="course_view_pivot">
+            <field name="name">test.course.pivot</field>
+            <field name="model">test.course</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <field name="level" type="row"/>
+                    <field name="name" type="row"/>
+                    <field name="base_price" type="measure"/>
+                    <field name="total_price" type="measure"/>
+                </pivot>
             </field>
         </record>
     </data>
