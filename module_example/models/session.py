@@ -25,7 +25,7 @@ class Session(models.Model):
 
     duration = fields.Integer(string='Session Days', default=1)
 
-    end_date = fields.Data(string='End Date',
+    end_date = fields.Date(string='End Date',
                            compute='_compute_end_date',
                            inverse='_inverse_end_date',
                            store=True)
