@@ -5,7 +5,7 @@
             <field name="name">view.session.form</field>
             <field name="model">test.session</field>
             <field name="arch" type="xml">
-                <form sreing="session form">
+                <form string="session form">
                     <sheet>
                         <h1>
                             <field name="name"/>
