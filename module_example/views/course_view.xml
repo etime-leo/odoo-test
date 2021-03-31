@@ -25,6 +25,9 @@
                             <page string="Description">
                                 <field name="description"/>
                             </page>
+                            <page string="Sessions">
+                                <field name="sessions_id"/>
+                            </page>
                         </notebook>
                     </sheet>
                 </form>
@@ -33,7 +36,7 @@
         <record model="ir.ui.view" id="course view list">
             <field name="name">view.course.list</field>
             <field name="model">test.course</field>
-            <field name="xml">
+            <field name="arch" type="xml">
                 <tree string="Course List">
                     <field name="name"/>
                     <field name="description"/>
@@ -44,7 +47,7 @@
         <record model="ui.ir,view" id="course view search">
             <field name="name">view.course.search</field>
             <field name="model">test.course</field>
-            <field name="aech" type="xml">
+            <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
                     <field name="description"/>

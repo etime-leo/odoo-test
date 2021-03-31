@@ -13,6 +13,7 @@
         'security/ir.model.access.csv',
         'views/course_view.xml',
         'views/test_menuitems.xml',
+        'views/session_view.xml',
     ],
     'demo': [
         'demo_data/course_demo.xml',
