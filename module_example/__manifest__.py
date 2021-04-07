@@ -7,7 +7,7 @@
     'website': 'https://etime-leo-odoo-test-develop-2294612.dev.odoo.com/',
     'category': 'training',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['sale'],
     'date': [
         'security/test_security.xml',
         'security/ir.model.access.csv',
