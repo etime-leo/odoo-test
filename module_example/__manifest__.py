@@ -14,6 +14,7 @@
         'views/course_view.xml',
         'views/test_menuitems.xml',
         'views/session_view.xml',
+        'views/product_view_inherit.xml',
     ],
     'demo': [
         'demo_data/course_demo.xml',
