@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="test_sale_wizard_form_view">
+            <field name="name">test.sale.wizard.form</field>
+            <field name="model">test.sale.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Create sale order for seesion">
+                    <group name="session_id">
+                        <field name="session_id"/>
+                        <field name="session_student_ids" invisible="1"/>
+                        <field name="student_ids" domain="[{'id','in',session_student_ids}]"/>
+                    </group>
+                    <footer>
+                        <button name="create_sale_orders"
+                                type="object"
+                                string="Create"
+                                class="oe_highlight">
+                            or
+                        </button>
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+                </form>
+                <field name="partner_id" position="before">
+                    <field name="instructor_id"/>
+                </field>
+            </field>
+        </record>
+        <act_window id="launch_sale_wizard"
+                    name="create sale order"
+                    binding_model="test.sale.wizard"
+                    view_mode="form"
+                    target="new"/>
+    </data>
+</odoo>
