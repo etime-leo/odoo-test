@@ -1,1 +1,1 @@
-from . import course, session, spaceship, sale_order, product_template
+from . import course, session, spaceship
