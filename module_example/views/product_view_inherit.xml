@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="product_template_only_form_view_inherit_academy">
-            <field name="name">product.template.product.form.inherit.academy</field>
+        <record model="ir.ui.view" id="product_template_only_form_view_inherit_test">
+            <field name="name">product.template.product.form.inherit.test</field>
             <field model="product.template"></field>
             <field name="inherit_id" ref="product.product_template_only_view"></field>
             <field name="arch" type="xml">

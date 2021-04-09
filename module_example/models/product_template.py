@@ -9,7 +9,7 @@ class ProductTemplate(models.Model):
     is_session_product = fields.Boolean(string='Use as session product',
                                         help='check this box to use session',
                                         default=True)
-    _name = 'test.product_template'
+    _name = 'test.product_template.template'
     _description = 'course info modify'
 
     name = fields.Char(string='Title', required=True)
