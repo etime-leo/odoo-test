@@ -30,7 +30,7 @@ class Session(models.Model):
                            inverse='_inverse_end_date',
                            store=True)
 
-    total_price = fields.Floats(string='total price',
+    total_price = fields.Float(string='total price',
                                 related='course_id.total_price')
 
     @api.depends('start_date', 'duration')
